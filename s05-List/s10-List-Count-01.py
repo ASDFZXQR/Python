@@ -1,18 +1,17 @@
-# 리스트 확장 : extend()
-# 기존에 있는 리스트에 요소를 추가하여 확장
-# 다수 append()를 하나로 처리하는 효과
-# 추가 리스트는 개별적으로 하나씩 append()가 된다
-# 리턴 : None
+# 리스트에서 해당하는 값을 포함하는 갯수 세기 : count()
+# 갯수 = 리스트.count(값)
+# 리턴 : 해당하는 값과 일치하는 요소의 갯수, 없으면 ZERO(0)
 
-lst = ['삼성', 'SK', 'LG']
-elt = ['APPLE', 'HD']
+lst = ['삼성', 'SK', 'LG', 'APPLE', 'HD', 'LG']
 
-print('lst:', lst.extend(elt))
-print(lst)
+value = 'LG'
+count = lst.count(value)
+print(f"{lst}.count({value}) ?", count)
 
-abc = ['ABC'].extend(elt)
-print(abc) # None
+#%%
 
-
+value = 'IBM'
+count = lst.count(value)
+print(f"{lst}.count({value}) ?", count)
 
 
