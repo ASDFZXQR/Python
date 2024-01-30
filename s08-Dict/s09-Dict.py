@@ -9,16 +9,15 @@ print('일요일:', 7 in weeks) # False
 
 #%%
 
-sun = {7:'일'}
+sun = {7: '일'}
 
 weeks.update(sun)
 
-print('일요일:', 7 in weeks)
+print('일요일:', 7 in weeks) # True
 
 #%%
 
 # TypeError: unsupported operand type(s) for +=: 'dict' and 'dict'
 # weeks += sun
 # weeks = weeks + sun
-
 

@@ -3,7 +3,7 @@
 # 결과 : 문자열의 위치, -1(찾지 못하면)
 
 r = "0123456789012345678901234567890"
-s = "python is the best choice."
+s = "Python is the best choice."
 ipos = s.find('i')
 kpos = s.find('k')
 
@@ -14,7 +14,7 @@ print(f"'{s}'.find('k') : ", kpos) # -1
 
 #%%
 
-print(f"'{s}'.find('is') : ", s.find('is')) # 7
+print(f"'{s}'.find('is') : ", s.find('is'))   # 7
 print(f"'{s}'.find('the') : ", s.find('the')) # 10
 
 #%%
@@ -23,13 +23,13 @@ print(f"'{s}'.find('the') : ", s.find('the')) # 10
 # 문자열을 연속해서 어떻게 찾을 수 있는가?
 # 문자열 변수(s)에서 지정된 문자열을 찾아라.
 r = "0123456789012345678901234567890"
-s = "python is the best choice."
+s = "Python is the best choice."
 findstr = 't'
 
 print(r)
-print(s)
+print(r)
 
-print(f"'{s}'에서 t 갯수 :", s.count(findstr))
+print(f"문자열 ('{s}')에서 문자열('{findstr}')의 갯수는?", s.count(findstr))
 t1 = s.find(findstr)
 t2 = s[t1+1:].find(findstr) + t1 + 1
 t3 = s[t2+1:].find(findstr) + t2 + 1
@@ -38,12 +38,10 @@ print(t1,t2,t3) # 2 10 17
 #%%
 
 t1 = s.find(findstr)
-s1 = s[t1+1:] # 슬라이싱
+s1 = s[t1+1:]  # 슬라이싱
 t2 = s1.find(findstr) + t1 + 1
-s2 = s[t2+1:] # 슬라이싱
+s2 = s[t2+1:]  # 슬라이싱 
 t3 = s2.find(findstr) + t2 + 1
-print(r)
-print(s)
 print(t1,t2,t3) # 2 10 17
 
 #%%
@@ -54,18 +52,3 @@ t1 = s.find(findstr)
 t2 = s.find(findstr, t1 + 1)
 t3 = s.find(findstr, t2 + 1)
 print(t1,t2,t3) # 2 10 17
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

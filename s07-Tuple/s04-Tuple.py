@@ -5,7 +5,7 @@ t = (1,3,5,7,9)
 # 슬라이싱 결과도 튜플
 t24 = t[2:4]
 
-# 튜플은 수정 불가
+# 튜플을 수정 불가
 # TypeError: 'tuple' object does not support item assignment
 # t24[0] = 99
 

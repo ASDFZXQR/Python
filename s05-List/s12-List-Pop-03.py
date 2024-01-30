@@ -2,9 +2,9 @@
 # 꺼낸 요소는 삭제가 된다.
 # pop(index) : 특정 위치의 요소를 꺼냄
 
+
 #%%
 lst = ['삼성', 'LG', 'SK', 'HD']
-
 
 
 #%%
@@ -20,17 +20,3 @@ print(f"{lst}.pop({index}) -> {value}")
 index = 3
 value = lst.pop(index)
 print(f"{lst}.pop({index}) -> {value}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
