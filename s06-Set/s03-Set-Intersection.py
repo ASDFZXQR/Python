@@ -1,0 +1,32 @@
+# 셋(set)의 교집합
+# 연산자 : &
+# set.intersection(...)
+
+#%%
+
+# 문자열을 셋(set)형으로 변환
+s1 = set("0123456789")
+s2 = set("2468A")
+
+# 양쪽에 모두 존재하는 값을 선택
+s3 = s1 & s2
+
+print(s1)
+print(s2)
+print(s3)
+
+#%%
+
+s4 = s1.intersection(s2)
+print(s4) 
+
+#%%
+
+# 정렬 : 리스트로 변환하여 정렬
+sl = list(s4)
+sl.sort()
+print("정렬 :", sl)
+
+# 다시 셋(set)으로 변환하면 순서가 보장되지 않음
+s5 = set(sl)
+print(s5, type(s5))

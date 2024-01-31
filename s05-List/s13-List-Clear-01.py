@@ -2,7 +2,7 @@
 # 리스트.clear()
 
 #%%
-lst = ['삼성', 'LG', 'SK', 'HD', 'HD']
+lst = ['삼성', 'LG', 'SK', 'HD']
 
 print(id(lst), lst)
 
@@ -19,3 +19,9 @@ print(id(lst), lst)
 # clear()와는 차이가 있다.
 lst = []
 print(id(lst), lst)
+
+
+
+
+
+

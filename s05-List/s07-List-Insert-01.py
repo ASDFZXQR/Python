@@ -15,12 +15,11 @@ print(lst)
 lst.insert(len(lst) * -1, '영영')
 print(lst)
 
-
-# 맨 마지막 삽입 : append()와 같은
+# 맨 마지막에 삽입 : append()와 같음
 lst.insert(len(lst), '끝')
 print(lst)
 
 # [주의]
-# 원래의 맨 마지막 요소는 뒤로 한 칸 이동
+# 원래의 맨 마지막 요소는 뒤로 밀림
 lst.insert(-1, '마지막')
 print(lst)

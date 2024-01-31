@@ -25,10 +25,24 @@ print(lst.pop(0)) # LG
 print(lst.pop(0)) # SK
 print(lst.pop(0)) # HD
 
-print('원본:', lst) # []
+print('원본: ', lst) # []
 
 #%%
 
 # 꺼낼 데이터가 없으면 예외발생 : IndexError
 # IndexError: pop from empty list
 print(lst.pop(0))
+
+
+
+
+
+
+
+
+
+
+
+
+
+

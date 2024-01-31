@@ -10,19 +10,22 @@ lst = ['홍길동', 80,90,100]
 
 # 인덱스 참조
 # call by value : 값을 변수에 직접 세팅
-sc = lst[1] # int
-print('점수:', sc)
+sc = lst[1]
+print('점수 :', sc)
 
 #%%
 
 sc = 88
-print('전체:', lst)
+print('전체 :', lst)
 
 #%%
 
 # 원본에서 새로운 공간에 메모리를 할당
-# 원본과는 독립적이다.
-sl = lst[1:] # [88,90,100]
+# 원본과는 독립적이다
+sl = lst[1:] # [[88,90,100]]
 sl[1] = 99
-print('사본:', sl)
-print('원본:', lst)
+print('사본 :',sl)
+print('원본 :',lst)
+
+
+

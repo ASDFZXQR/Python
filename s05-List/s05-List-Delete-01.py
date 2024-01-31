@@ -13,9 +13,15 @@ print(lst) # [1, 2, 4, 5]
 
 # 슬라이싱을 하여 삭제 가능
 del lst[1:3]
-print(lst) # [1, 5]
+print(lst) # [1,5]
 
 # 전체를 삭제
 # id의 변화는 없다(메모리의 변동은 없다)
 del lst[:]
 print(lst, id(lst)) # []
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 # 딕셔너리
-# 키(key)는 변하는 않는 값을 사용해야 한다.
+# 키(key)는 변하지 않는 값을 사용해야 한다.
 #   - 리스트(list)는 사용할 수 없다.(값을 변경 가능)
 #   - 중복을 허용하지 않는다.(유일한 값)
 
@@ -32,6 +32,8 @@ sv = '암호'
 dx = {sk:sv}
 print(dx)
 
+#%%
+
 # TypeError: 'str' object does not support item assignment
 # sk[3] = '카'
 
@@ -52,8 +54,8 @@ dt['세트'] = set("1234567890")
 
 print(dt)
 
-print(dt['사전'])         # {'high': '높이', 'good': '좋은'}
-print(dt['사전']['good']) # 좋은
+print(dt['사전'])             # {'high': '높이', 'good': '좋은'}
+print(dt['사전']['good'])     # 좋은
 print(dt['사전'].get('good')) # 좋은
 
 dx = dt['사전']
@@ -63,6 +65,9 @@ print(dx.get('high'), dx.get('good'))
 
 #%%
 
-# 딕셔너리 전체 지우지
+# 딕셔너리 전체 지우기
 dt.clear()
 dt = {}
+
+
+

@@ -6,10 +6,12 @@ lst = ['삼성', 'SK', 'LG', 'APPLE', 'HD', 'LG']
 
 value = 'LG'
 count = lst.count(value)
-print(f"{lst}.count('{value}')?", count)
+print(f"{lst}.count({value}) ?", count)
 
 #%%
 
 value = 'IBM'
 count = lst.count(value)
-print(f"{lst}.count('{value}')?", count)
+print(f"{lst}.count({value}) ?", count)
+
+
