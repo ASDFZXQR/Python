@@ -1,0 +1,68 @@
+
+# 가상머신 화면 크기 자동 조절
+$ sudo apt update
+$ sudo apt -y upgrade
+$ sudo apt -y install build-essential
+
+# 공유폴더 마운트
+$ mkdir Shared
+$ sudo mount -t vboxsf Shared /home/solero/Shared
+
+# 파일목록 보기
+ls
+ls -l
+ls -al
+
+# 현재 사용중인 쉘
+echo $SHELL # /bin/bash
+
+# 텍스트 파일 보기
+cat hello.txt
+
+# echo : 환경변수 및 메시지 출력(콘솔창)
+echo "Hello, World"
+
+# 파이썬3: 설치
+sudo apt-get install python3
+
+# 파이썬3: 터틀 설치
+sudo apt-get install python3-tk
+
+# 파이썬3: 실행
+python3 turtle-demo.py
+
+# 스파이더 설치
+sudo apt install spyder
+
+# 스파이더 제거
+sudo apt remove spyder
+
+# 아나콘다 설치
+cd ~/Downloads
+chmod 555 Anaconda3-2023.09-0-Linux-x86_64.sh
+./Anaconda3-2023.09-0-Linux-x86_64.sh
+
+Do you accept the license terms? yes
+폴더: $HOME/anaconda3
+      예시) /home/solero/anaconda3
+
+# VIM 설치 : 편집기
+sudo apt install vim
+
+# .bashrc : SHELL 스크립트
+sudo apt install vim # vi 편집기 설치
+vim .bashrc          # vi 편집기로 편집
+export PATH=$PATH:$HOME/anaconda3/bin
+$ source .bashrc
+$ source ~/anaconda3/etc/profile.d/conda.sh
+
+# 아나콘다 가상 환경 관리
+conda create -n hello python=3.11 # 생성
+conda activate hello              # 접속
+conda deactivate hello            # 해제
+conda remote -n hello             # 삭제
+
+# 아나콘다 네비케이터 설치 및 실행
+conda install anaconda-navigator # 설치
+anaconda-navigator
+
