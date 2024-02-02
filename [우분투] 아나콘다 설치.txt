@@ -1,0 +1,29 @@
+
+cd ~/anaconda3/bin
+./conda init
+terminal # 새로운 터미널 창
+conda config --set auto_activate_base false
+
+# 가상환경
+conda create -n solero python=3.11
+conda activate solero
+conda install spyder
+spyder
+conda deactivate
+
+# 아나콘다 가상 환경 관리
+conda create -n hello python=3.11 # 생성
+conda activate hello              # 접속
+conda deactivate hello            # 해제
+conda remote -n hello             # 삭제
+
+# 아나콘다 네비케이터 설치 및 실행
+conda install anaconda-navigator # 설치
+anaconda-navigator
+
+# 링크걸기
+ln 원본파일 링크이름
+ln anaconda-navigator conda-navi
+rm conda-navi
+unlink conda-navi
+
