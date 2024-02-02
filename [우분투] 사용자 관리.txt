@@ -1,0 +1,9 @@
+# 사용자 관리
+
+# 사용자 생성: 방법1
+sudo adduser 계정이름
+sudo deluser 계정이름
+
+# 사용자 생성: 방법2
+sudo useradd 계정이름
+sudo userdel 계정이름
